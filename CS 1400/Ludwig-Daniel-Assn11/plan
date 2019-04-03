@@ -1,0 +1,35 @@
+System Requirements:
+    Write a program that gives the user to draw a circle out of either circles or squares.
+    The user can set the variables of the circle.
+    The user also has a super pattern option that has the computer choose all the variables and
+        shapes for them. The user just chooses how many to have the computer draw.
+System Analysis:
+    Use assn11.py to run main and get inputs for the patterns to be draw.
+    Import pattern.py that uses turtle to draw the patterns chosen by the user.
+System Design:
+    Input:
+        Which shape to use to draw.
+        What variables to use for the stats of the circle.
+        Does the user want to go again? If so do they want to clear the board?
+    Output:
+        A circle drawn out of either rectangles or circles. If user chooses super pattern
+            then there can be multiple drawn.
+    Calculate:
+        Use random() to randomize variables for super pattern.
+        Where to draw, how big to draw, and what shapes to use.
+Testing:
+    Test 1:
+        Input: 1
+        0,0
+        25
+        40
+        5
+        100
+        4
+        3
+        Output: correctly drawn circle using rectangles.
+    Test 2:
+        Input: 3
+        5
+        3
+        Output: 5 randomly drawn circles. 4 Using circles, 1 using rectangle.

@@ -1,0 +1,49 @@
+Task 1
+
+System Requirements:
+    Write a program that imports draws a chessboard. The user will need to input
+    where they want the chessboard to start drawing and the height and width of the chessboard.
+System Analysis:
+    Use assn13-task1.py, add imports from turtle and Chessboard class and inputs.
+    Import chessboard.py that uses turtle to draw a chessboard. Define Chessboard as a class and import it to
+        assn13-task1.py
+System Design:
+    Input:
+        Starting positions
+        Desired width
+        Desired height
+    Output:
+        A program that draws a chessboard with the specs that were inputted from user.
+    Calculate:
+        How big every small square should be in comparison to the specs of the board. The board is 8 x 8
+            small squares.
+        Write a program that draws a small black square, and use that many times to create am 8 x 8 white and black
+            alternating squares.
+Testing:
+    Test 1:
+        Input 100, 100
+            50
+            50
+        Output Runtime Error
+        Review errors on chessboard.py and fix them, has to do with self.__***
+    Test 2:
+        Input: 0,0
+            150
+            100
+        Output a chessboard with desired specs
+        Is perfect
+
+
+   ****************************
+   Chessboard
+   ----------------------------
+   startX: int
+   startY: int
+   width: float
+   height: float
+   ----------------------------
+   __boardPerimeter()
+   __drawRectangle()
+   __drawAllRectangles()
+   draw()
+   ****************************

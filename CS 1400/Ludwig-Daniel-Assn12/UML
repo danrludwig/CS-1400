@@ -1,0 +1,17 @@
+   ****************************
+   Account
+   ----------------------------
+   id: int
+   balance: float
+   annualInterestRate: float
+   withdraw: float
+   deposit: float
+   ----------------------------
+   getId()
+   getBalance()
+   getAnnualInterestRate()
+   getMonthlyInterestRate()
+   getMonthlyInterest()
+   withdraw()
+   deposit()
+   ****************************

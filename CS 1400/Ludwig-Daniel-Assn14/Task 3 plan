@@ -1,0 +1,68 @@
+Task 3
+
+System Requirements:
+    Create a program that uses Turtle to draw shapes.
+    Use and build program around this menu:
+        Enter Circle
+        Enter Rectangle
+        Remove Shape
+        Draw Shapes
+        Exit
+System Analysis:
+    Import Circle and Rectangle, that both are classes to draw their shapes.
+    Provide menu with options for user.
+    Lead user through process of giving stats for shapes, removing any shapes, and let them draw the
+        shapes that are saved.
+System Design:
+    Input: What action user wishes to take on the menu.
+            Circle stats.
+            Rectangle stats.
+            What shape to remove
+            If user wants to draw shapes.
+            If user wants to exit the program.
+    Calculate: The position for the using the radius.
+    Output: The possible shapes the user can delete.
+            The shapes the user entered.
+Testing:
+    Test 1:
+        Input: 1
+                0, 0, 50, 2
+        Ourput: draw(shape_perimeters) not defined.
+        Needs to export information to the classes properly.
+    Test 2:
+        Input: 1
+                0, 0, 100, 2
+                2
+                0, -100, 50, 100, 4
+        Ourput: properly drawn circle and rectangle in proper spots.
+        Is perfect.
+
+
+   ****************************
+   Circle
+   ----------------------------
+   circleSpecs = list
+   self.position = int
+   self.radius = int
+   self.color = str(int)
+   ----------------------------
+   draw()
+   setColor()
+   setPosition()
+   drawCircle()
+   ****************************
+
+   ****************************
+   Rectangle
+   ----------------------------
+   rectangleSpecs = list
+   self.position = int
+   self.height = int
+   self.width = int
+   self.color = str(int)
+   ----------------------------
+   draw()
+   setColor()
+   setPosition()
+   drawRectangle()
+   ****************************

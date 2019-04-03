@@ -1,0 +1,34 @@
+Task 2 System Requirements:
+    Take input from a user on the account id, balance for the account, and the annual interest rate.
+    Take all those values store them while the program is being run and give options to where the user can
+    make choices on what to do with the information basec on a menu provided.
+System Analysis:
+    For task 2 create account.py where the Account class is made and used in assn12_task2.py. account.py is where the
+    calculations are made and assn12_task2.py is where everything is inputted and outputted
+System Design:
+    Input:
+        ID
+        Balance
+        Annual interest rate
+        Withdraw from balance
+        Deposit to balance
+    Output:
+        Either display: id, balance, annual interest rate, monthly interest rate, monthly interest
+        Or give the user the option to withdraw from or deposit to the balance.
+    Calculate:
+        Monthly interest rate
+        monthly interest
+        How much is in the new balance if added to or subtracted from
+Testing:
+    Test 1:
+        Input: 12
+        5000
+        4.5
+        Output: All outputs seemed to have worked correctly.
+        No changes
+    Test 2:
+        Input: Null
+            Null
+            Null
+        Output: Defaults to o, 100, 0. And everything seemed to work fine. Withdraw and deposits works fine.
+        Is perfect

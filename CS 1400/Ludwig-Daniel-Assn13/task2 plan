@@ -1,0 +1,52 @@
+Task 2
+
+System Requirements:
+    Create a system where the user inputs a password and it gets checked if its valid or not.
+    Password requirements:
+        The password must have at least eight characters.
+        The password must consist of only letters and digits.
+        The password must contain at least two digits.
+        The password cannot contain the word 'password'
+        The password cannot end with '123'
+System Analysis:
+    Use assn13-task2.py to use the class Password and receive input from the user, also outputs anything.
+    The class Password is what's going to be used in checking the password to see if it meets all the
+        requirements.
+System Design:
+    Input: the password from the user
+    Calculate: Whether the password meets the requirements
+    Output: If the password meets the requirement then an approval will be outputted, otherwise the program
+        will notify the user the password isn't good enough and why the password wasn't accepted.
+Testing:
+    Test 1:
+        Input: whatever
+        Ourput: Invalid Password
+                Errors:
+
+                [2, 3]
+        Need to find out why __errors aren't going into __message.
+        Didn't call __isValid function, decided to add it.
+    Test 2:
+        Input: thisisthecode12
+        Output: Valid Password
+                Enter "y" to enter another password:
+        Is perfect.
+
+
+   ****************************
+   Password
+   ----------------------------
+   passGuess = string
+   __error = list
+   __message = string
+   __valid = boolean
+   ----------------------------
+   setpassword()
+   isValid()
+   getErrorMessage()
+   __isLength()
+   __isSpecialCharacters()
+   __hasdigits()
+   __containPassword()
+   __end123()
+   ****************************
