@@ -1,12 +1,4 @@
-'''
-    Daniel Ludwig   A02220549
-    CS 1400
-    Assignment 11
-'''
-
-#### Add Import Statement(s) as needed ####
 import pattern
-#### End Add Import Statement(s) ####
 
 def main():
     # Setup pattern
