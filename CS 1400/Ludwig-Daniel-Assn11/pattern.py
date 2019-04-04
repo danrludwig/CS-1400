@@ -1,9 +1,3 @@
-'''
-    Daniel Ludwig   A02220549
-    CS 1400
-    Assignment 11
-'''
-
 import turtle
 import random
 
