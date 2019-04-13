@@ -1,0 +1,69 @@
+Task 3
+
+System Requirements:
+    Create cards, deal to user, give the user the option to sort the deck either by value or id, get a new hand or
+        search for a specific card and see if its in the hand.
+    Use and build program around this menu:
+        Sort by value
+        Sort by id
+        Find card
+        New hand
+        Exit
+System Analysis:
+    Import the Card class to the Deck class, and then the Deck class to main. Main is where the user input happens and
+        where the sorting is managed.
+    The Card class creates a card.
+    The Deck class uses a card to create a deck with every possibility out of the cards using the values of 1-20,
+    rock paper or scissors, and heads or tails.
+    Create functions to sort the cards two different ways, and to search for a specific card.
+System Design:
+    Input: Nothing is inputted to determine the creation of the cards.
+        The user inputs what command they would like to run out of the given option from the menu
+    Calculate: The cards are shuffled at random an the cards that are dealt to the user are the top 30 cards from the
+        deck.
+        To find a specific card a math equation uses the card id (which isn't displayed to the user) to determine what
+            the id is it needs to search for, and then it uses a binary search to find the id.
+    Output: The hand the user has.
+        The menu for the user.
+        The sorted cards
+        Whether or not the card searched for is in the hand
+        A new deck of cards if the user wants it
+Testing:
+    Test 1:
+        Input: 1
+        Ourput: class card.card is not defined
+        Needs to import the Card class to the Deck class properly.
+    Test 2:
+        Input: 1
+            2
+            3
+            4
+            5
+        Ourput: The hand sorted by value
+            The hand sorted by id
+            The card wasn't in the deck
+            A new hand was created
+            The program ended
+        Fixed all the issues on the program
+
+
+   ****************************
+   Deck
+   ----------------------------
+   self.cards = []
+   ----------------------------
+   shuffle()
+   draw()
+   ****************************
+
+   ****************************
+   Card
+   ----------------------------
+   self.id = card_id
+   self.__value = int
+   self.__coin = str
+   self.__hand = str
+   ----------------------------
+   __str__(self)
+   __repr__(self)
+   ****************************
