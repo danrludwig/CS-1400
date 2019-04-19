@@ -1,0 +1,65 @@
+Task 2
+
+System Requirements:
+    Create a program to play black jack. Use the deck and card classes provided
+System Analysis:
+    Get number of players between 1 to 5
+    Get a bet amount
+    Deal cards to each user
+    Find out what each player wants to do, either hit or hold
+    Have the dealer play to try and beat the players
+    If dealer looses everyone who didn't bust wins, else whoever has a bigger hand than the dealer that didn't bust wins
+System Design:
+    Input: Amount of players
+        Bet amount
+        Hit or Hold
+        If the user wants to play again
+    Calculate: The sum of the card value for each player
+        If the sum of card values is over 21
+        If if the ace is worth 11 or 1 points
+        If the dealer needs to hit or hold
+        If the dealer busts
+        The winner
+    Output: The cards in each persons hand
+        The winner
+        Balance for each player
+        If player busts or not
+        Option to play again
+Testing:
+    Test 1:
+        Input: 1
+        Ourput: 2 players
+        Needs make it so the dealer isn't a player
+    Test 2:
+        Input: 1
+            1
+            2
+        Output: The dealer won, the balance amount was adjusted properly, if the user wants to play again
+        Is perfect
+
+
+   ****************************
+   Deck
+   ----------------------------
+   self.shuffle()
+   self.__deck= []
+   ----------------------------
+   shuffle(self)
+   draw(self)
+   ****************************
+
+   ****************************
+   Card
+   ----------------------------
+   self.__value = value
+   self.__suits = ["Spades", "Clubs", "Hearts", "Diamonds"]
+   self.__ranks = ["Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"]
+   ----------------------------
+   getRank(self)
+   getSuit(self)
+   getCardValue(self)
+   getDeckValue(self)
+   getNickName(self)
+   __str__(self)
+   __repr__(self)
+   ****************************
